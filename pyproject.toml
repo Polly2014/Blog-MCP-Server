@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "blog-mcp-server"
+version = "0.1.0"
+description = "MCP servers for Polly's blog content creation and guesthouse management"
+authors = ["Polly <polly@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastmcp = "^2.8.1"
+openai = "^1.58.1"
+python-dotenv = "^1.0.0"
+pydantic = "^2.10.4"
+httpx = "^0.28.1"
+jinja2 = "^3.1.4"
+markdown = "^3.7"
+python-frontmatter = "^1.1.0"
+pillow = "^11.0.0"
+requests = "^2.32.3"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+mypy = "^1.13.0"
+
+[tool.poetry.scripts]
+blog-content-server = "blog_mcp_server.content_server:main"
+guesthouse-server = "blog_mcp_server.guesthouse_server:main"
+media-generation-server = "blog_mcp_server.media_server:main"
+blog-management-server = "blog_mcp_server.management_server:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

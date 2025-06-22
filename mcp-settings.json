@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "blog-content-server": {
+      "command": "poetry",
+      "args": ["run", "python", "-m", "blog_mcp_server.content_server"],
+      "cwd": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server",
+      "env": {
+        "PYTHONPATH": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server"
+      }
+    },
+    "guesthouse-management-server": {
+      "command": "poetry",
+      "args": ["run", "python", "-m", "blog_mcp_server.guesthouse_server"],
+      "cwd": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server",
+      "env": {
+        "PYTHONPATH": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server"
+      }
+    },
+    "media-generation-server": {
+      "command": "poetry",
+      "args": ["run", "python", "-m", "blog_mcp_server.media_server"],
+      "cwd": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server",
+      "env": {
+        "PYTHONPATH": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server"
+      }
+    },
+    "blog-management-server": {
+      "command": "poetry",
+      "args": ["run", "python", "-m", "blog_mcp_server.management_server"],
+      "cwd": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server",
+      "env": {
+        "PYTHONPATH": "/Users/polly/Downloads/Sublime_Workspace/Zola_Workspace/www.polly.com/Blog_MCP_Server"
+      }
+    }
+  }
+}

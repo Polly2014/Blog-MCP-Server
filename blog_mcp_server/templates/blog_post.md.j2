@@ -1,0 +1,18 @@
++++
+title = "{{ title }}"
+date = {{ date }}
+template = "blog.html"
+slug = "{{ slug }}"
+path = "{{ slug }}"
+archive = [{% for year in archive %}"{{ year }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+
+[taxonomies]
+category = [{% for cat in categories %}"{{ cat }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+tags = [{% for tag in tags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+
+[extra]
+author = "{{ author }}"
+summary = "{{ summary }}"
++++
+
+{{ content }}
